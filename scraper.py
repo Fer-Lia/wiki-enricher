@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 from config import WIKIPEDIA_URL, HEADERS
 
-class WikiScraper:
+class Scraper:
 
     def __init__(self, tema):
         self.tema = tema
