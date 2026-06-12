@@ -5,6 +5,9 @@ from config import WIKIPEDIA_URL, HEADERS
 class Scraper:
 
     def __init__(self, tema):
+        if not tema:
+            print("Error: el tema no puede estar vacío")
+            return
         self.tema = tema
         self.url = f"{WIKIPEDIA_URL}{tema}"
 
