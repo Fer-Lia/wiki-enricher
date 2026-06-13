@@ -39,7 +39,6 @@ class Enricher:
                 print("Error: respuesta vacía de la API")
                 return texto_original
             return choices[0]['message']['content']
-
         except requests.exceptions.ConnectionError:
             print("Error: no hay conexión a internet")
             return texto_original
